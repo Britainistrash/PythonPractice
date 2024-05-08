@@ -1,14 +1,22 @@
+score = 0
 name = input ("What's your name")
-if name == "Human":
+if name == "human":
     print("That's cool")
-print("My name is NevER gONnA giVE yOU Up")
+else:
+    print("Ok idc")
 
 print ("Welcome to the quiz")
 print ("This quiz is about the stuff in the universe")
 
-input ("What galaxy are we in?")
-print ("Haha noob we're in milky way")
+answer = input ("What galaxy are we in?")
+if answer == "milky way":
+    print("HaCKeR!")
+    score -= 5
+elif answer == "":
+    print("Bruv?")
+else:
+    print ("Haha noob we're in milky way")
 
-print ("Thx for playing please do not try again :)")
+print ("Do not try again :)")
 
-answer = input("What galaxy are we in?")
+print("Your final score is", score)
