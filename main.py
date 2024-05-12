@@ -1,3 +1,4 @@
+QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
 score = 0
 name = input ("What's your name")
 if name == "human":
@@ -8,8 +9,13 @@ else:
 print ("Welcome to the quiz")
 print ("This quiz is about the stuff in the universe")
 
-answer = input ("What galaxy are we in?")
-if answer == "milky way":
+question = "What galaxy are we in?"
+a = "1"
+b = "2"
+c = "3"
+d = "milky way"
+answer = input(QUESTION_FORMAT.format(question, a, b, c, d)).lower()
+if answer == d or answer == "d".lower():
     print("HaCKeR!")
     score -= 5
 elif answer == "":
@@ -19,4 +25,4 @@ else:
 
 print ("Do not try again :)")
 
-print("Your final score is", score)
+print("Game bugged {}. You lost. Your score was {}".format(name, score))
