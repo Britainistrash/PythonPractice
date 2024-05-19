@@ -1,4 +1,4 @@
-QUESTIION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
+QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
 score = 0
 name = input ("What's your name")
 if name == "human":
@@ -14,7 +14,7 @@ a = "1"
 b = "2"
 c = "3"
 d = "milky way"
-answer = inpsut(QUESTION_FORMAT.format(question, a, b, c, d)).lower()
+answer = input(QUESTION_FORMAT.format(question, a, b, c, d)).lower()
 if answer == d or answer == "d".lower():
     print("HaCKeR!")
     score -= 5
