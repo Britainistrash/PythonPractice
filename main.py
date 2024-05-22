@@ -20,10 +20,11 @@ if answer == d or answer == "d".lower():
     score -= 5
 elif answer == "":
     print("Bruv?")
-elif answer != a and answer != "a" and answer != b and answer != "b" and answer != c and answer != "c"
-
+elif answer != a and answer != "a" and answer != b and answer != "b" and answer != c and answer != "c" and answer != d and answer !="d"
+    print("Wrong too bad")
 else:
-    print ("Haha noob we're in milky way")
+    print("0 brain cell")
+print ("Haha noob we're in milky way")
 
 print ("Do not try again :)")
 
